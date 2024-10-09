@@ -42,7 +42,7 @@
 		
 		```
 		task YXY-Electricity.py
-   	```
+   		```
 		**定时规则：**
 		
 		- 通过链接生成Cron表达式[Cron在线表达式生成器](https://cron.ciding.cc/)
