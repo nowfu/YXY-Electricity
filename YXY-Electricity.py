@@ -9,12 +9,6 @@ SHIRO_JID = "你的易校园Cookie"
 # 官网：https://sct.ftqq.com/sendkey
 SERVER_CHAN_SECRET = "你的SendKey"
 
-url = 'https://application.xiaofubao.com/app/electric/queryRoomSurplus'
-headers = {
-    'Content-Type': 'application/json',
-    'Cookie': f'shiroJID={SHIRO_JID}'
-}
-
 json_data = {
     # 学校ID
     "areaId": "你的学校ID",
@@ -29,6 +23,11 @@ json_data = {
     "ymId": "你的Cookie用户账号ID"
 }
 
+url = 'https://application.xiaofubao.com/app/electric/queryRoomSurplus'
+headers = {
+    'Content-Type': 'application/json',
+    'Cookie': f'shiroJID={SHIRO_JID}'
+}
 
 def send_server_notification(title: str, content: str) -> None:
     """
